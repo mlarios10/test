@@ -8,7 +8,7 @@ var api = express.Router();
 
 api.get('/animals', AnimalController.getAnimals);
 //api.get('/animals/:filter');
-api.get('/animals/id', AnimalController.getAnimal);
+api.get('/animal/:id', AnimalController.getAnimal);
 api.post('/animal', AnimalController.saveAnimal);
 api.post('/animals');
 api.put('/animal/:id');
